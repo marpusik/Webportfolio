@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <title>Responsive CV using HTML & CSS</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"
+          href="./style.css">
+</head>
+<body>
+<div class="container">
+    <div class="left_Side">
+        <div class="profileText">
+            <div class="imgBx">
+                <img src="img.jpg"
+                     alt="">
+            </div>
+            <h2>Dima Martinovich<br><span>Web Developer</span></h2>
+        </div>
+        <div class="contactInfo">
+            <h3 class="title">Contact info</h3>
+            <ul>
+                <li>
+                    <span class="icon"><i class="fa fa-phone"
+                                          aria-hidden="true"></i></span>
+                    <span class="text">+375293224491</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-envelope-open"
+                                          aria-hidden="true"></i></span>
+                    <span class="text">marpusik1987@gmail.com</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-globe"
+                                          aria-hidden="true"></i></span>
+                    <span class="text">github.com/marpusik</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-linkedin"
+                                          aria-hidden="true"></i></span>
+                    <span class="text">linkedin.com/in/dima-martinovic-0881a5196/</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-map-marker"
+                                          aria-hidden="true"></i></span>
+                    <span class="text">Minsk, Belarus</span>
+                </li>
+            </ul>
+        </div>
+        <div class="contactInfo education">
+            <h3 class="title">Education</h3>
+            <ul>
+                <li>
+                    <h5>2019-2020</h5>
+                    <h4>Frontend development courses</h4>
+                    <h4>it-incubator</h4>
+                </li>
+                <li>
+                    <h5>2017-2018</h5>
+                    <h4>JavaScript Web Application Development</h4>
+                    <h4>IT Academy</h4>
+                </li>
+                <li>
+                    <h5>2011-2016</h5>
+                    <h4>Faculty of Information Technology, Information Systems Software</h4>
+                    <h4>Polotsk State University</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="contactInfo language">
+            <h3 class="title">Languages</h3>
+            <ul>
+                <li>
+                    <span class="text">English</span>
+                    <span class="percent">
+                        <div style="width: 40%;"></div>
+                    </span>
+                </li>
+                <li>
+                    <span class="text">Russian</span>
+                    <span class="percent">
+                        <div style="width: 90%;"></div>
+                    </span>
+                </li>
+                <li>
+                    <span class="text">Polish</span>
+                    <span class="percent">
+                         <div style="width: 60%;"></div>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right_Side">
+        <div class="about">
+            <h2 class="title2">Profile</h2>
+            <p>Hi there 👋
+                I'm Dima Martinovich.
+                Web developer who has results-oriented approach to creating and using projects. I want to find work on a
+                project and full time in the company with modern approach to development and close-knit team. I spend my
+                free time in Codewars programming tutorials because in the future I see myself as a Full Stack
+                developer. Ready to consider project work and full time Work.</p>
+        </div>
+        <div class="about">
+            <h2 class="title2">Experience</h2>
+            <div class="box">
+                <div class="year_company">
+                    <h5>2018 - Present</h5>
+                    <h5>LLC "GRINroznitsa", Minsk, shop.green-market.by</h5>
+                </div>
+                <div class="text">
+                    <h4>Web-programmer</h4>
+                    <p>Maintenance and development of the existing online store (Minsk):
+                        programming, JavaScript, XML, AJAX;
+                        design and administration of the MySQL database;
+                        layout of an existing site;
+                        completion of CMS modules;
+                        development and support of the site.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="year_company">
+                    <h5>2016 - 2018</h5>
+                    <h5>Stakers ltd., Minsk, www.stakers
+                        .com</h5>
+                </div>
+                <div class="text">
+                    <h4>Junior Web-programmer</h4>
+                    <p>Information technology, system integration, internet. Internet company (search engines, payment
+                        systems, social networks, information, educational and entertainment resources, website
+                        promotion, etc.). Participation in projects for the implementation and maintenance of solutions
+                        on the platform.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about skills">
+            <h2 class="title2">Professional Skills</h2>
+            <div class="box">
+                <h4>Html</h4>
+                <div class="percent"></div>
+                <div id="color" style="width: 60%;"></div>
+            </div>
+            <div class="box">
+                <h4>CSS</h4>
+                <div class="percent"></div>
+                <div id="color" style="width: 60%;"></div>
+            </div>
+            <div class="box">
+                <h4>JavaScript</h4>
+                <div class="percent"></div>
+                <div id="color" style="width: 40%;"></div>
+            </div>
+            <div class="box">
+                <h4>React</h4>
+                <div class="percent"></div>
+                <div id="color" style="width: 40%;"></div>
+            </div>
+            <div class="box">
+                <h4>Wordpress</h4>
+                <div class="percent"></div>
+                <div id="color" style="width: 60%;"></div>
+            </div>
+            <div class="box">
+                <h4>Git</h4>
+                <div class="percent"></div>
+                <div id="color" style="width: 40%;"></div>
+            </div>
+        </div>
+        <div class="about interest">
+            <h2 class="title2">Interest</h2>
+            <ul>
+                <li><i class="fa fa-bicycle" aria-hidden="true"></i>Sport</li>
+                <li><i class="fa fa-music" aria-hidden="true"></i>Guitar</li>
+                <li><i class="fa fa-tasks" aria-hidden="true"></i>Program</li>
+                <li><i class="fa fa-font" aria-hidden="true"></i>Rest in a tent</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

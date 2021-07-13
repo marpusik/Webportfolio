@@ -8,10 +8,16 @@
 }
 body{
     background: lightblue;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+.mainWebsite{
+    text-align: center;
+    margin: 20px 0;
+    color: #111;
+    text-decoration: none;
 }
 .container{
     position: relative;

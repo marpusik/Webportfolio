@@ -16,6 +16,12 @@
     --white:#fff;
     --white2:#fff;
 }
+.dark {
+    --black:#fff;
+    --black2:#444;
+    --white:#333;
+    --white2:#444;
+}
 body{
     overflow: auto;
 }
@@ -34,6 +40,9 @@ body{
     align-items: center;
     overflow: hidden;
     transition: width 0.5s, left 0.5s;
+}
+.dark .navigation{
+    border-right: 1px solid rgba(0,0,0,0.05);
 }
 .navigation.active{
     width: 0;
@@ -93,6 +102,9 @@ body{
     align-items: center;
     z-index: 1000;
     transition: width .5s, left 0.5s;
+}
+.dark .main .topbar {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
 }
 .main .topbar.active{
     width: calc(100% - 0px);
@@ -159,6 +171,9 @@ h3{
 p{
     color: #777;
 }
+.dark p{
+    color: var(--black);
+}
 .btn{
     position: relative;
     display: inline-block;
@@ -169,6 +184,9 @@ p{
     letter-spacing: 1px;
     margin-top: 10px;
     text-decoration: none;
+}
+.dark .btn:hover{
+    background: #2196f3;
 }
 .socialMedia{
     position: absolute;
@@ -190,6 +208,9 @@ p{
     color: var(--black);
     font-size: 1.2em;
     text-decoration: none;
+}
+.dark .socialMedia li a:hover {
+    background: #2196f3;
 }
 .socialMedia li a:hover{
     background: var(--black2);
@@ -259,8 +280,14 @@ p{
     align-items: center;
     flex-direction: column;
 }
+.dark .services .content .serviceBox:hover {
+    background: #2196f3;
+}
 .services .content .serviceBox img{
     max-width: 50px;
+}
+.dark .services .content .serviceBox img {
+    filter: invert(1);
 }
 .services .content .serviceBox h2 {
     font-size: 1.1em;
@@ -318,6 +345,9 @@ p{
     transform: translateY(100%);
     transition: 0.5s ease-in-out;
 }
+.dark .project .content .workBx .textBx {
+    background: #444;
+}
 .project .content .workBx:hover .textBx {
     transform: translateY(0);
 }
@@ -336,6 +366,9 @@ p{
     border: 1px solid rgba(0,0,0,0.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     padding: 20px;
+}
+.dark .testimonials .content .testimonialsBox:hover {
+    background: #2196f3;
 }
 .testimonials .content .testimonialsBox .imgBx{
     position: relative;
@@ -426,13 +459,56 @@ p{
     max-width: 150px;
     border: none;
 }
+.dark .contact .contactForm .row2 input[type="submit"]:hover {
+    background: #2196f3;
+}
 .copyright{
     position: relative;
     bottom: -200px;
     /*padding: 10px 40px;*/
     text-align: center;
 }
+.themeSwitch{
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.themeSwitch::before {
+    content: '\f186';
+    font-family: fontAwesome, serif;
+}
+.dark .themeSwitch::before {
+    content: '\f185';
+    font-family: fontAwesome, serif;
+}
+.themeSwitch::after {
+    content: 'Switch To Dark Mode';
+    position: absolute;
+    left: 40px;
+    font-size: 0.7em;
+    color: var(--black);
+    white-space: nowrap;
+    font-weight: 300;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+.dark .themeSwitch::after {
+    content: 'Switch To Light Mode';
+    font-family: fontAwesome, serif;
+}
 @media (max-width:992px){
+    .themeSwitch{
+        left: 20px;
+    }
     .navigation{
         left: -100%;
     }

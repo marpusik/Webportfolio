@@ -19,13 +19,20 @@
 <div class="container">
     <div class="navigation">
         <ul>
-            <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#services" onclick="toggleMenu()">Services</a></li>
-            <li><a href="#project" onclick="toggleMenu()">Project</a></li>
-            <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="#banner"
+                   onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about"
+                   onclick="toggleMenu()">About</a></li>
+            <li><a href="#services"
+                   onclick="toggleMenu()">Services</a></li>
+            <li><a href="#project"
+                   onclick="toggleMenu()">Project</a></li>
+            <li><a href="#testimonials"
+                   onclick="toggleMenu()">Testimonials</a></li>
+            <li><a href="#contact"
+                   onclick="toggleMenu()">Contact</a></li>
         </ul>
+        <div class="themeSwitch"></div>
     </div>
     <div class="main">
         <div class="topbar">
@@ -277,18 +284,27 @@
             </div>
             <div class="contactForm">
                 <div class="row">
-                    <input type="text" name="" placeholder="First Name">
-                    <input type="text" name="" placeholder="Last Name">
+                    <input type="text"
+                           name=""
+                           placeholder="First Name">
+                    <input type="text"
+                           name=""
+                           placeholder="Last Name">
                 </div>
                 <div class="row">
-                    <input type="text" name="" placeholder="Email Address">
-                    <input type="text" name="" placeholder="Mobile No.">
+                    <input type="text"
+                           name=""
+                           placeholder="Email Address">
+                    <input type="text"
+                           name=""
+                           placeholder="Mobile No.">
                 </div>
                 <div class="row2">
                     <textarea placeholder="Message"></textarea>
                 </div>
                 <div class="row2">
-                    <input type="submit" value="Send">
+                    <input type="submit"
+                           value="Send">
                 </div>
             </div>
             <div class="copyright">
@@ -302,11 +318,16 @@
     let topbar = document.querySelector('.topbar');
     let navigation = document.querySelector('.navigation');
     let main = document.querySelector('.main');
+    let themeSwitch = document.querySelector('.themeSwitch');
+    let body = document.querySelector('.body');
     toggle.onclick = function () {
         toggle.classList.toggle('active');
         topbar.classList.toggle('active');
         navigation.classList.toggle('active');
         main.classList.toggle('active');
+    }
+    themeSwitch.onclick = function () {
+        document.body.classList.toggle('dark');
     }
     function toggleMenu() {
         let navigation = document.querySelector('.navigation');
